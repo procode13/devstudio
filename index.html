@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="description" content="Creative DEVSTUDIO — Game & Software Development, Indie Projects, and Creative Technology.">
+  <title>Creative DEVSTUDIO — Portfolio &amp; Proyek</title>
+
+  <!-- Typography: Caveat (Script for 'Creative' & Kickers), Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Separated Modular CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!---CANVAS--->
+  <section class="hero-canvas" id="hero">
+    <div class="container">
+      <div class="script-creative">Creative</div>
+      <div class="bounding-box">
+        <span class="handle tl"></span>
+        <span class="handle tc"></span>
+        <span class="handle tr"></span>
+        <span class="handle ml"></span>
+        <span class="handle mr"></span>
+        <span class="handle bl"></span>
+        <span class="handle bc"></span>
+        <span class="handle br"></span>
+
+        <h1 class="devstudio-logo">
+          <span class="letter-mint">D</span><span class="letter-mint">E</span><span class="letter-blue">V</span><span class="stroke-text">STUDIO</span>
+        </h1>
+      </div>
+      <nav class="nav-pill-row">
+        <a href="#beranda" class="gradient-pill">Beranda</a>
+        <a href="#my-proyek-1" class="gradient-pill">My Proyek</a>
+        <a href="#social-media" class="gradient-pill">Hubungi Saya</a>
+        <button type="button" class="hero-share-pill" onclick="shareWebsite()" title="Bagikan Website Portfolio">
+          <span>🔗</span>
+          <span>Bagikan Web</span>
+        </button>
+      </nav>
+    </div>
+  </section>
+
+  <!--BERANDA-->
+  <section class="section-beranda" id="beranda">
+    <div class="container">
+      <!-- Unified Signature Header Box -->
+      <div class="unified-header-box">
+        <div class="header-kicker-script">01. Profil &amp; Eksplorasi</div>
+        <h2 class="unified-title">
+          <span class="letter-mint">BER</span><span class="stroke-text anda">ANDA</span>
+          <!-- Lightbulb SVG Icon with Glow -->
+        </h2>
+        <div class="unified-underline"></div>
+      </div>
+
+      <!-- Diagonal Staggered Paragraphs from Mockup -->
+      <div class="beranda-grid">
+        <div class="beranda-col-left lead-text">
+          <p>
+            Selamat datang di <strong>Creative DEVSTUDIO</strong>. 
+            Tempat eksplorasi game development, teknologi grafis real-time, 
+            dan arsitektur software.
+          </p>
+          <p>
+            Kami juga menyediakan repositori GitHub untuk proyek-proyek kreatif yang kami kembangkan.
+            Kalian dapat belajar dari kode sumber yang kami bagikan, 
+            dan dapat digunakan sebagai referensi untuk membangun proyek kalian sendiri.
+          </p>
+        </div>
+
+        <div class="beranda-col-right lead-text">
+          <p>
+            Maaf jika proyek yang kami tampilkan masih bertahap, 
+            karena kami terus dalam proses pengembangan dan eksplorasi berkelanjutan. 
+            Kalian dapat membantu kami dengan saran ataupun memberi 
+            donasi untuk mendukung pengembangan proyek-proyek kreatif kami.
+          </p>
+          <p>
+            Silakan jelajahi berbagai proyek pada bagian 
+            <strong>My Proyek</strong> di bawah ini, bagikan dan promosikan ke teman Anda,
+            atau berikan masukan melalui formulir kontak. Semoga kalian menyukai karya kami!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--MY PROYEK 1-->
+  <section class="section-proyek-a" id="my-proyek-1">
+    <div class="container">
+      <!-- Unified Signature Header Box -->
+      <div class="unified-header-box">
+        <div class="header-kicker-script">02. Eksplorasi &amp; Proyek Unggulan</div>
+        <h2 class="unified-title">
+          <span class="letter-mint">MY</span> <span class="stroke-text">PROYEK</span>
+          <!-- Gamepad / Engine SVG Icon -->
+          <svg class="section-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="6" width="20" height="12" rx="3"></rect>
+            <path d="M6 12h4"></path>
+            <path d="M8 10v4"></path>
+            <circle cx="15" cy="11" r="1" fill="currentColor"></circle>
+            <circle cx="18" cy="13" r="1" fill="currentColor"></circle>
+          </svg>
+        </h2>
+        <div class="unified-underline"></div>
+      </div>
+
+      <div class="proyek-intro lead-text">
+        <p>
+          Jelajahi berbagai proyek yang kami kembangkan. 
+          Setiap proyek dilengkapi dengan deskripsi, fitur utama, teknologi yang digunakan, 
+          serta tautan ke kode sumber dan demo langsung (jika tersedia). 
+          Klik pada kartu proyek untuk melihat detail lebih lanjut.
+        </p>
+      </div>
+    </div>
+
+    <!-- Tilted Marquee Stage 1: Moving to the left (Dengan Foto Proyek) -->
+    <div class="tilted-marquee-stage">
+      <div class="marquee-bounding-line">
+        <span class="handle h-top-left"></span>
+        <span class="handle h-top-center"></span>
+        <span class="handle h-top-right"></span>
+        <span class="handle h-bottom-left"></span>
+        <span class="handle h-bottom-center"></span>
+        <span class="handle h-bottom-right"></span>
+
+        <!-- Continuous Horizontal Scroll Track 1 -->
+        <div class="marquee-track track-scroll-left" id="marquee-track-1">
+          <!-- Dynamically generated with photos by main.js -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MY PROYEK 2 -->
+  <section class="section-proyek-b" id="my-proyek-2">
+    <!-- Tilted Marquee Stage 2: Moving to the right for dynamic variety -->
+    <div class="tilted-marquee-stage tilt-reverse">
+      <div class="marquee-bounding-line">
+        <span class="handle h-top-left"></span>
+        <span class="handle h-top-center"></span>
+        <span class="handle h-top-right"></span>
+        <span class="handle h-bottom-left"></span>
+        <span class="handle h-bottom-center"></span>
+        <span class="handle h-bottom-right"></span>
+
+        <!-- Continuous Horizontal Scroll Track 2 -->
+        <div class="marquee-track track-scroll-right" id="marquee-track-2">
+          <!-- Dynamically generated with photos by main.js -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HUBUNGI SAYA -->
+  <section class="section-social-saran" id="social-media">
+    <div class="container">
+      <div class="social-saran-grid">
+        <!-- Sosial Media Cards -->
+        <div>
+          <!-- Unified Signature Header Box -->
+          <div class="unified-header-box" style="margin-bottom: 24px;">
+            <div class="header-kicker-script">03. Terhubung &amp; Komunitas</div>
+            <h2 class="unified-title">
+              <span class="letter-mint">HUBUNGI</span> <span class="stroke-text">SAYA</span>
+              <!-- Network / Share SVG Icon -->
+              <svg class="section-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="18" cy="5" r="3"></circle>
+                <circle cx="6" cy="12" r="3"></circle>
+                <circle cx="18" cy="19" r="3"></circle>
+                <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+              </svg>
+            </h2>
+            <div class="unified-underline"></div>
+          </div>
+
+          <p class="lead-text" style="margin-bottom: 28px;">
+            Ikuti kami di platform sosial untuk update rilis game, demo gameplay, dan devlog terbaru:
+          </p>
+
+          <div class="social-card-group">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-item">
+              <div class="social-left">
+                <div class="social-icon-box">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="github"><path fill-rule="evenodd" d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z" clip-rule="evenodd" fill="#ffffff"></path></svg></div>
+                <div>
+                  <div class="social-handle">GITHUB</div>
+                </div>
+              </div>
+              <span class="social-arrow">↗</span>
+            </a>
+
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-item">
+              <div class="social-left">
+                <div class="social-icon-box">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="instagram"><path d="M17.34,5.46h0a1.2,1.2,0,1,0,1.2,1.2A1.2,1.2,0,0,0,17.34,5.46Zm4.6,2.42a7.59,7.59,0,0,0-.46-2.43,4.94,4.94,0,0,0-1.16-1.77,4.7,4.7,0,0,0-1.77-1.15,7.3,7.3,0,0,0-2.43-.47C15.06,2,14.72,2,12,2s-3.06,0-4.12.06a7.3,7.3,0,0,0-2.43.47A4.78,4.78,0,0,0,3.68,3.68,4.7,4.7,0,0,0,2.53,5.45a7.3,7.3,0,0,0-.47,2.43C2,8.94,2,9.28,2,12s0,3.06.06,4.12a7.3,7.3,0,0,0,.47,2.43,4.7,4.7,0,0,0,1.15,1.77,4.78,4.78,0,0,0,1.77,1.15,7.3,7.3,0,0,0,2.43.47C8.94,22,9.28,22,12,22s3.06,0,4.12-.06a7.3,7.3,0,0,0,2.43-.47,4.7,4.7,0,0,0,1.77-1.15,4.85,4.85,0,0,0,1.16-1.77,7.59,7.59,0,0,0,.46-2.43c0-1.06.06-1.4.06-4.12S22,8.94,21.94,7.88ZM20.14,16a5.61,5.61,0,0,1-.34,1.86,3.06,3.06,0,0,1-.75,1.15,3.19,3.19,0,0,1-1.15.75,5.61,5.61,0,0,1-1.86.34c-1,.05-1.37.06-4,.06s-3,0-4-.06A5.73,5.73,0,0,1,6.1,19.8,3.27,3.27,0,0,1,5,19.05a3,3,0,0,1-.74-1.15A5.54,5.54,0,0,1,3.86,16c0-1-.06-1.37-.06-4s0-3,.06-4A5.54,5.54,0,0,1,4.21,6.1,3,3,0,0,1,5,5,3.14,3.14,0,0,1,6.1,4.2,5.73,5.73,0,0,1,8,3.86c1,0,1.37-.06,4-.06s3,0,4,.06a5.61,5.61,0,0,1,1.86.34A3.06,3.06,0,0,1,19.05,5,3.06,3.06,0,0,1,19.8,6.1,5.61,5.61,0,0,1,20.14,8c.05,1,.06,1.37.06,4S20.19,15,20.14,16ZM12,6.87A5.13,5.13,0,1,0,17.14,12,5.12,5.12,0,0,0,12,6.87Zm0,8.46A3.33,3.33,0,1,1,15.33,12,3.33,3.33,0,0,1,12,15.33Z" fill="#ffffff"></path></svg>
+                </div>
+                <div>
+                  <div class="social-handle">INSTAGRAM</div>
+                </div>
+              </div>
+              <span class="social-arrow">↗</span>
+            </a>
+
+            <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" class="social-item">
+              <div class="social-left">
+                <div class="social-icon-box">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" id="tiktok"><path d="M38.4 21.68V16c-2.66 0-4.69-.71-6-2.09a8.9 8.9 0 0 1-2.13-5.64v-.41l-5.37-.13V30.8a5 5 0 1 1-3.24-5.61v-5.5a10.64 10.64 0 0 0-1.7-.14 10.36 10.36 0 1 0 10.36 10.36 10.56 10.56 0 0 0-.08-1.27v-9.15a14.48 14.48 0 0 0 8.16 2.19Z" fill="#ffffff"></path></svg>
+                </div>
+                <div>
+                  <div class="social-handle">TIKTOK</div>
+                </div>
+              </div>
+              <span class="social-arrow">↗</span>
+            </a>
+
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-item">
+              <div class="social-left">
+                <div class="social-icon-box">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="youtube"><path d="M23,9.71a8.5,8.5,0,0,0-.91-4.13,2.92,2.92,0,0,0-1.72-1A78.36,78.36,0,0,0,12,4.27a78.45,78.45,0,0,0-8.34.3,2.87,2.87,0,0,0-1.46.74c-.9.83-1,2.25-1.1,3.45a48.29,48.29,0,0,0,0,6.48,9.55,9.55,0,0,0,.3,2,3.14,3.14,0,0,0,.71,1.36,2.86,2.86,0,0,0,1.49.78,45.18,45.18,0,0,0,6.5.33c3.5.05,6.57,0,10.2-.28a2.88,2.88,0,0,0,1.53-.78,2.49,2.49,0,0,0,.61-1,10.58,10.58,0,0,0,.52-3.4C23,13.69,23,10.31,23,9.71ZM9.74,14.85V8.66l5.92,3.11C14,12.69,11.81,13.73,9.74,14.85Z" fill="#ffffff"></path></svg>
+                </div>
+                <div>
+                  <div class="social-handle">YOUTUBE</div>
+                </div>
+              </div>
+              <span class="social-arrow">↗</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Kotak Pesan / Hubungi Kami -->
+        <div>
+          <div class="saran-card">
+            <h3 class="saran-title">
+              <span>
+                ✉
+              </span>
+              <span>Kirim Pesan</span>
+            </h3>
+
+            <form id="saran-form">
+              <!-- Anti-Spam Security Trap (Honeypot: tersembunyi untuk manusia, menjebak bot scraper) -->
+              <div style="display: none !important; visibility: hidden; opacity: 0; position: absolute; left: -9999px;" aria-hidden="true">
+                <label for="saran-security-honey">Jangan isi kolom ini</label>
+                <input type="text" id="saran-security-honey" name="_security_honey" tabindex="-1" autocomplete="off">
+              </div>
+
+              <div class="form-group">
+                <label for="saran-nama" class="form-label">Nama Anda</label>
+                <input type="text" id="saran-nama" class="form-input" required autocomplete="off" maxlength="100">
+              </div>
+
+              <div class="form-group">
+                <label for="saran-email" class="form-label">Email Anda</label>
+                <input type="email" id="saran-email" class="form-input" required autocomplete="email" maxlength="100">
+              </div>
+
+              <div class="form-group">
+                <label for="saran-kategori" class="form-label">Kategori Pesan</label>
+                <select id="saran-kategori" class="form-select">
+                  <option value="Kerjasama & Kolaborasi">Kerjasama &amp; Kolaborasi</option>
+                  <option value="Pengembangan Proyek">Pengembangan Proyek</option>
+                  <option value="Feedback Desain & UI">Feedback Desain &amp; UI</option>
+                  <option value="Pertanyaan Umum">Pertanyaan Umum</option>
+                  <option value="Lainnya">Lainnya</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="saran-pesan" class="form-label">Isi Pesan Anda</label>
+                <textarea id="saran-pesan" class="form-textarea" placeholder="Tuliskan pesan Anda" required maxlength="3000"></textarea>
+              </div>
+
+              <button type="submit" class="gradient-pill" id="saran-submit-btn" style="width: 100%; border-radius: 8px; padding: 14px; border: none; cursor: pointer;">
+                <span>Kirim Pesan Sekarang</span>
+                <span>✉</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- MODAL DETAIL PROYEK -->
+  <div class="modal-backdrop" id="project-modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-box">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <h3 id="modal-title">Nama Proyek</h3>
+          <span style="font-size: 12px; color: var(--text-dim);" id="modal-category">Versi &amp; Tahun</span>
+        </div>
+        <button class="modal-close-btn" id="modal-close-btn" aria-label="Tutup modal">✕</button>
+      </div>
+
+      <div class="modal-body">
+        <!-- Banner dengan Foto Proyek Asli -->
+        <div class="modal-card-banner" id="modal-card-banner">
+          <!-- Injected dynamically by main.js -->
+        </div>
+
+        <p class="modal-desc" id="modal-desc">
+          Deskripsi lengkap proyek akan ditampilkan di sini.
+        </p>
+
+        <div>
+          <div style="font-size: 13px; font-weight: 800; color: var(--text-main); margin-bottom: 8px;">
+            FITUR &amp; ARSITEKTUR UTAMA
+          </div>
+          <ul class="modal-features-list" id="modal-features">
+            <!-- Injected by main.js -->
+          </ul>
+        </div>
+
+        <div>
+          <div style="font-size: 13px; font-weight: 800; color: var(--text-main); margin-bottom: 8px;">
+            TEKNOLOGI YANG DIGUNAKAN
+          </div>
+          <div class="modal-tag-row" id="modal-tags">
+            <!-- Injected by main.js -->
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <a href="#" target="_blank" rel="noopener noreferrer" class="gradient-pill modal-footer-btn" id="modal-code-btn">
+          <span>Source Code</span>
+          <span>↗</span>
+        </a>
+        <a href="#" target="_blank" rel="noopener noreferrer" class="gradient-pill modal-footer-btn btn-demo-pill" id="modal-demo-btn">
+          <span>Live Demo / Run</span>
+          <span>↗</span>
+        </a>
+        <button type="button" class="modal-btn-share" id="modal-share-btn" title="Bagikan proyek ini">
+          <span>🔗</span>
+          <span>Bagikan</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- SHARE MODAL -->
+  <div class="share-modal-backdrop" id="share-modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="share-modal-box">
+      <div class="share-header-row">
+        <h3 class="share-title">
+          <span>🔗</span>
+          <span>Bagikan Proyek / Website</span>
+        </h3>
+        <button type="button" class="modal-close-btn" id="share-close-btn" aria-label="Tutup dialog bagikan">✕</button>
+      </div>
+
+      <div class="share-target-preview" id="share-target-title">
+        Creative DEVSTUDIO
+      </div>
+
+      <div class="share-copy-group">
+        <input type="text" class="share-input-url" id="share-target-url" readonly value="https://creative-devstudio.local">
+        <button type="button" class="btn-copy-link" id="copy-link-btn">Salin Tautan</button>
+      </div>
+
+      <div style="font-size: 12px; font-weight: 700; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.04em;">
+        Atau Bagikan Lewat Media Sosial:
+      </div>
+
+      <div class="share-social-grid">
+        <a href="#" target="_blank" rel="noopener noreferrer" class="btn-social-share" id="share-wa">
+          <span style="font-size: 16px;">💬</span>
+          <span>WhatsApp</span>
+        </a>
+        <a href="#" target="_blank" rel="noopener noreferrer" class="btn-social-share" id="share-x">
+          <span style="font-size: 16px;">✖️</span>
+          <span>Twitter / X</span>
+        </a>
+        <a href="#" target="_blank" rel="noopener noreferrer" class="btn-social-share" id="share-telegram">
+          <span style="font-size: 16px;">✈️</span>
+          <span>Telegram</span>
+        </a>
+        <a href="#" target="_blank" rel="noopener noreferrer" class="btn-social-share" id="share-linkedin">
+          <span style="font-size: 16px;">💼</span>
+          <span>LinkedIn</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-notification" id="toast-notification">
+    ✓ Tautan berhasil disalin ke papan klip!
+  </div>
+
+  <!-- Modal Verifikasi 7 Kode OTP Email (admin-dev) -->
+  <div class="admin-modal-backdrop" id="admin-otp-modal" aria-hidden="true" role="dialog" aria-modal="true" style="display: none; z-index: 99999;">
+    <div class="admin-modal-box" style="max-width: 440px;">
+      <div class="admin-modal-header">
+        <div class="admin-header-title-wrap">
+          <div class="admin-header-badge">
+            <span class="admin-live-dot"></span> VERIFIKASI KEAMANAN EMAIL
+          </div>
+          <h3 class="admin-title">Kode Akses Pengelola</h3>
+        </div>
+        <button type="button" class="modal-close-btn" id="admin-otp-close-btn" aria-label="Tutup dialog verifikasi">✕</button>
+      </div>
+      <form id="admin-otp-form" style="padding: 24px;">
+        <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 18px; line-height: 1.5;">
+          Sistem telah membuat dan mengirimkan <strong>7 kode acak (huruf &amp; angka)</strong> ke email Anda: <br>
+          <strong id="otp-email-target-text" style="color: var(--mint-base); font-size: 13.5px;">raffaadi07@gmail.com</strong>
+        </p>
+
+        <div class="form-group" style="margin-bottom: 20px;">
+          <label for="admin-otp-input" class="form-label">Masukkan 7 Kode Acak</label>
+          <input type="text" id="admin-otp-input" class="form-input" placeholder="CONTOH: 7K9M2PX" maxlength="7" autocomplete="off" style="letter-spacing: 5px; font-weight: 800; font-size: 19px; text-transform: uppercase; text-align: center;" required autofocus>
+        </div>
+
+        <div id="admin-otp-error" style="display: none; color: #f87171; font-size: 12.5px; margin-bottom: 16px; background: rgba(239, 68, 68, 0.1); padding: 10px 14px; border-radius: 6px; border: 1px solid rgba(239, 68, 68, 0.3); font-weight: 600;"></div>
+
+        <div style="font-size: 11.5px; color: var(--text-dim); margin-bottom: 18px; line-height: 1.4;">
+          ⏳ Kode berlaku selama 10 menit. Jika belum masuk, periksa tab <strong>Spam</strong> atau <strong>Promosi</strong> di email Anda.
+        </div>
+
+        <button type="submit" class="gradient-pill" id="admin-otp-submit-btn" style="width: 100%; border-radius: 8px; padding: 13px; border: none; cursor: pointer;">
+          <span>Verifikasi &amp; Atur Website</span> <span>➔</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Admin Floating Bar -->
+  <!-- Floating Quick Admin Bar (Muncul saat Mode Admin Aktif) -->
+  <div class="admin-floating-bar" id="admin-floating-bar" style="display: none;">
+    <div class="admin-floating-content">
+      <span class="admin-live-dot"></span>
+      <span class="admin-status-text"><strong>MODE ADMINISTRATOR</strong></span>
+      <button type="button" class="btn-admin-pill" id="open-admin-panel-btn">🛠️ Kelola Proyek</button>
+      <button type="button" class="btn-admin-logout" id="logout-admin-btn" title="Keluar Mode Admin">✕ Keluar</button>
+    </div>
+  </div>
+
+  <!-- Admin Modal / Dashboard Proyek -->
+  <div class="admin-modal-backdrop" id="admin-modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="admin-modal-box">
+      <!-- Admin Modal Header -->
+      <div class="admin-modal-header">
+        <div class="admin-header-title-wrap">
+          <div class="admin-header-badge">
+            <span class="admin-live-dot"></span> SESI ADMINISTRATOR TERVERIFIKASI
+          </div>
+          <h3 class="admin-title">Panel Admin — Kelola Proyek Studio</h3>
+        </div>
+        <button type="button" class="modal-close-btn" id="admin-modal-close-btn" aria-label="Tutup panel admin">✕</button>
+      </div>
+
+      <!-- Admin Top Nav / Sub-tabs -->
+      <div class="admin-nav-tabs">
+        <button type="button" class="admin-tab-btn active" id="tab-btn-list">📁 Daftar Proyek (<span id="admin-total-count">0</span>)</button>
+        <button type="button" class="admin-tab-btn" id="tab-btn-form">➕ Tambah Proyek Baru</button>
+        <button type="button" class="admin-tab-btn btn-reset-style" id="btn-reset-default" title="Kembalikan semua proyek ke bawaan awal">🔄 Reset</button>
+        <input type="file" id="admin-import-excel" accept=".xlsx,.xls" style="display: none;">
+        <button type="button" class="admin-tab-btn" id="btn-import-excel" title="Pilih file proyek.xlsx untuk langsung diterapkan ke website">📂 Update dari Excel (.xlsx)</button>
+      </div>
+
+      <!-- Tab Content 1: List Proyek (Kelola / Edit / Hapus) -->
+      <div class="admin-tab-content" id="admin-tab-list">
+        <!-- Pengaturan Email Penerima Pesan -->
+        <div class="admin-email-config-box">
+          <div style="display: flex; flex-direction: column; gap: 3px;">
+            <span style="font-size: 13px; font-weight: 800; color: #ffffff;">📧 Email Tujuan Kotak Pesan:</span>
+            <span style="font-size: 11px; color: var(--text-dim);">Pesan yang dikirim pengunjung di formulir kontak akan langsung masuk ke alamat email ini.</span>
+          </div>
+          <div style="display: flex; gap: 8px; align-items: center; margin-top: 8px;">
+            <input type="email" id="admin-recipient-email-input" class="form-input" placeholder="contoh: emailanda@gmail.com" style="flex: 1; padding: 8px 12px; font-size: 13px;">
+            <button type="button" class="btn-admin-pill" id="btn-save-recipient-email" style="padding: 9px 16px;">Simpan Email</button>
+          </div>
+        </div>
+
+        <!-- Project List Container -->
+        <div class="admin-projects-list" id="admin-projects-list">
+          <!-- Dynamically populated by main.js -->
+        </div>
+      </div>
+
+      <!-- Tab Content 2: Add / Edit Form -->
+      <div class="admin-tab-content" id="admin-tab-form" style="display: none;">
+        <form id="admin-project-form" class="admin-form">
+          <input type="hidden" id="admin-form-edit-id" value="">
+
+          <div class="admin-form-header-note">
+            <span id="admin-form-mode-title" style="font-weight: 800; color: var(--mint-base); font-size: 15px;">➕ Tambah Proyek Baru</span>
+            <span style="font-size: 12px; color: var(--text-dim);">Isi detail data proyek yang ingin ditampilkan di website.</span>
+          </div>
+
+          <div class="admin-form-grid">
+            <!-- Judul -->
+            <div class="form-group" style="grid-column: 1 / -1;">
+              <label class="form-label" for="form-title">Judul Proyek *</label>
+              <input type="text" id="form-title" class="form-input" required placeholder="Contoh: CyberRogue: Neon Protocol">
+            </div>
+
+            <!-- Versi -->
+            <div class="form-group">
+              <label class="form-label" for="form-version">Versi Rilis</label>
+              <input type="text" id="form-version" class="form-input" placeholder="Contoh: v1.0.0" value="v1.0.0">
+            </div>
+
+            <!-- Tahun -->
+            <div class="form-group">
+              <label class="form-label" for="form-year">Tahun Pembuatan</label>
+              <input type="text" id="form-year" class="form-input" placeholder="Contoh: 2026" value="2026">
+            </div>
+
+            <!-- Tema Warna Kartu -->
+            <div class="form-group">
+              <label class="form-label" for="form-theme">Tema Warna Kartu</label>
+              <select id="form-theme" class="form-select">
+                <option value="theme-mint">Mint (Aksen Hijau Neon)</option>
+                <option value="theme-blue">Blue (Aksen Biru Elektrik)</option>
+                <option value="theme-sky">Sky (Aksen Biru Langit)</option>
+                <option value="theme-cyan">Cyan (Aksen Aqua)</option>
+              </select>
+            </div>
+
+            <!-- Sumber Foto / Gambar (Bisa File Komputer atau Path Folder/URL) -->
+            <div class="form-group" style="grid-column: 1 / -1;">
+              <label class="form-label" for="form-image">Foto / Gambar Proyek *</label>
+              <div class="admin-image-input-choice">
+                <!-- Pilihan A: Upload File dari Folder Komputer -->
+                <div class="file-upload-box">
+                  <label for="form-image-file" class="btn-file-chooser">
+                    <span>📁 Pilih File dari Folder Komputer</span>
+                  </label>
+                  <input type="file" id="form-image-file" accept="image/*" style="display: none;">
+                  <span id="form-file-name" class="file-name-hint">Klik tombol untuk memilih gambar (PNG/JPG/WebP)</span>
+                </div>
+
+                <div class="image-choice-divider">
+                  <span>ATAU MASUKKAN PATH FOLDER / URL MANUAL</span>
+                </div>
+
+                <!-- Pilihan B: Masukkan path relatif (contoh: images/proyek1.png) atau URL online -->
+                <input type="text" id="form-image" class="form-input" required placeholder="Contoh: images/proyek1.png atau https://...">
+                <span style="font-size: 11px; color: var(--text-dim); margin-top: 2px;">
+                  💡 Tips: Simpan gambar Anda di folder <code>images/</code> di dalam proyek, lalu ketik <code>images/nama_foto.png</code>. Atau gunakan tombol pilih file di atas.
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Preview Gambar -->
+          <div class="admin-image-preview-wrap">
+            <span style="font-size: 11px; color: var(--text-dim); text-transform: uppercase; font-weight: 700;">Pratinjau Foto:</span>
+            <div class="admin-image-preview-box" id="form-image-preview">
+              <span style="color: var(--text-dim); font-size: 12px;">Masukkan URL foto di atas untuk melihat pratinjau</span>
+            </div>
+          </div>
+
+          <!-- Deskripsi Ringkas -->
+          <div class="form-group" style="margin-top: 14px;">
+            <label class="form-label" for="form-summary">Deskripsi Singkat / Ringkasan *</label>
+            <textarea id="form-summary" class="form-textarea" rows="2" required placeholder="Deskripsi teknis singkat mengenai gameplay, performa, atau arsitektur proyek..."></textarea>
+          </div>
+
+          <!-- Tech Stack Tags -->
+          <div class="form-group">
+            <label class="form-label" for="form-tags">Tech Stack Tags (Pisahkan dengan koma)</label>
+            <input type="text" id="form-tags" class="form-input" placeholder="Contoh: Godot 4, C#, HLSL, Rollback UDP">
+          </div>
+
+          <!-- Links Grid -->
+          <div class="admin-form-grid">
+            <div class="form-group">
+              <label class="form-label" for="form-github">Link Source Code / GitHub</label>
+              <input type="url" id="form-github" class="form-input" placeholder="https://github.com/username/repo">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="form-demo">Link Live Demo / Play / Run</label>
+              <input type="url" id="form-demo" class="form-input" placeholder="https://example.com/demo">
+            </div>
+          </div>
+
+          <!-- Fitur Utama -->
+          <div class="form-group">
+            <label class="form-label" for="form-features">Fitur &amp; Arsitektur Utama (1 Fitur per Baris)</label>
+            <textarea id="form-features" class="form-textarea" rows="3" placeholder="Sistem procedural generation dengan wave function collapse.&#10;Sub-tick deterministic netcode serialization.&#10;Volumetric lighting dengan custom compute shaders."></textarea>
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="admin-form-actions">
+            <button type="submit" class="gradient-pill" id="form-submit-btn" style="border: none; cursor: pointer; padding: 12px 24px;">
+              <span>💾 Simpan Proyek</span>
+            </button>
+            <button type="button" class="btn-cancel-admin" id="form-cancel-btn">Batal</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div>
+          &copy; 2026 Creative DEVSTUDIO. Desain dibuat presisi menyerupai wireframe mockup.
+        </div>
+        <div>
+          HTML5 • CSS3 Murni • Vanilla JavaScript
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Saweria Support Modal -->
+  <div class="saweria-modal-backdrop" id="saweria-modal-backdrop" role="dialog" aria-modal="true" aria-label="Dukungan Kreator via Saweria">
+    <div class="saweria-modal-card">
+      <!-- Tombol Silang di Pojok Kanan Atas -->
+      <button type="button" class="saweria-modal-close" id="saweria-modal-close" aria-label="Tutup notifikasi" title="Tutup">
+        ✕
+      </button>
+
+      <!-- Banner Visual Saweria di Atas Card -->
+      <div class="saweria-modal-banner"></div>
+
+      <!-- Konten Utama Notifikasi -->
+      <div class="saweria-modal-content">
+
+        <h3 class="saweria-modal-title">
+          Traktir Kopi &amp; Dukung <span class="text-amber-glow">DevStudio</span>!
+        </h3>
+
+        <p class="saweria-modal-desc">
+          Jika Anda menyukai proyek-proyek yang kami buat, pertimbangkan untuk mendukung kami melalui Saweria. Dukungan Anda akan membantu kami terus mengembangkan proyek-proyek kreatif dan menarik.
+        </p>
+
+        <!-- Tombol Aksi Utama ke Saweria -->
+        <div class="saweria-modal-cta-group">
+          <a href="https://saweria.co/affaradi" target="_blank" rel="noopener noreferrer" class="btn-saweria-modal-action" title="Buka Saweria">
+            <span class="btn-saweria-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" zoomAndPan="magnify" viewBox="0 0 30 30.000001" height="40" preserveAspectRatio="xMidYMid meet" version="1.0"><defs><filter x="0%" y="0%" width="100%" height="100%" id="6457caf552"><feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0" color-interpolation-filters="sRGB"/></filter><filter x="0%" y="0%" width="100%" height="100%" id="bb19c8f300"><feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0.2126 0.7152 0.0722 0 0" color-interpolation-filters="sRGB"/></filter><clipPath id="41aeeea2fc"><path d="M 0.484375 0 L 29.515625 0 L 29.515625 29 L 0.484375 29 Z M 0.484375 0 " clip-rule="nonzero"/></clipPath><mask id="96ab4e7b4c"><g filter="url(#6457caf552)"><g filter="url(#bb19c8f300)" transform="matrix(0.172811, 0, 0, 0.172811, 0.48387, 0.00000193548)"><image x="0" y="0" width="168" xlink:href="data:image/png;base64,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" height="168" preserveAspectRatio="xMidYMid meet"/></g></g></mask></defs><g clip-path="url(#41aeeea2fc)"><g mask="url(#96ab4e7b4c)"><g transform="matrix(0.172811, 0, 0, 0.172811, 0.48387, 0.00000193548)"><image x="0" y="0" width="168" xlink:href="data:image/png;base64,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" height="168" preserveAspectRatio="xMidYMid meet"/></g></g></g></svg>
+            </span>
+            <span>Traktir Kopi di Saweria</span>
+            <span class="btn-saweria-arrow">↗</span>
+          </a>
+          <button type="button" class="btn-saweria-dismiss" id="btn-saweria-dismiss">
+            Lanjut Jelajahi Website
+          </button>
+        </div>
+
+        <div class="saweria-modal-payment-methods">
+          <span>Metode Pembayaran: QRIS • GoPay • OVO • DANA • ShopeePay • LinkAja</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Floating Circular Button Saweria (Muncul di Pojok Kanan Bawah Setelah Notif Ditutup) -->
+  <button type="button" class="saweria-floating-btn" id="saweria-floating-btn" aria-label="Buka Notifikasi Saweria" title="Traktir Kopi di Saweria" style="display: none;">
+    <span class="saweria-floating-pulse"></span>
+    <span class="saweria-floating-icon">
+      <!-- Icon Kopi Saweria -->
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+        <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+        <line x1="6" y1="1" x2="6" y2="4"></line>
+        <line x1="10" y1="1" x2="10" y2="4"></line>
+        <line x1="14" y1="1" x2="14" y2="4"></line>
+      </svg>
+    </span>
+  </button>
+  <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
